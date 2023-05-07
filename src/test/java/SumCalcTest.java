@@ -13,20 +13,20 @@ public class SumCalcTest {
     }
 
     @Test
-    public void one () throws IllegalAccessException {
+    public void oneValueTesting () throws IllegalAccessException {
        int result = sumCalculator.sum(1);
         Assertions.assertEquals(1, result);
     }
 
 
     @Test
-    public void three () throws IllegalAccessException {
+    public void threeValueTesting () throws IllegalAccessException {
         int result = sumCalculator.sum(3);
         Assertions.assertEquals(6, result);
     }
 
     @Test
-    public void zero () throws IllegalAccessException {
+    public void zeroValuetesting () throws IllegalAccessException {
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
             sumCalculator.sum(0);
         });
